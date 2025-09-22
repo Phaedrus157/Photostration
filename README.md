@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PhotStration - Professional Photo to Artistic Illustration Renderer
 
 🎨 **Transform photographs into stunning artistic illustrations** with three distinct rendering styles using advanced computer vision and image processing techniques.
@@ -197,3 +198,7 @@ This project is part of the PhotStration suite developed for professional artist
 **Created by:** PhotStration Project Team  
 **Date:** September 2025  
 **Python Version:** 3.13+
+=======
+# Photostration
+Create web ready simplified images of photographs
+>>>>>>> 28bcbe930907f09446be5c3ac4c797cbf8266de9
