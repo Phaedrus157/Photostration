@@ -1,0 +1,52 @@
+{
+    "folders": [
+        {
+            "name": "PhotStration",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.pylint",
+            "ms-python.black-formatter",
+            "ms-python.isort",
+            "ms-toolsai.jupyter",
+            "eamodio.gitlens",
+            "visualstudioexptteam.vscodeintellicode",
+            "ms-vscode.vscode-json"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "🎨 Debug ArchRend",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/ArchRend.py",
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}"
+            },
+            {
+                "name": "🏗️ Debug PhotStration", 
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/PhotStration.py",
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}"
+            },
+            {
+                "name": "🎭 Debug PosterRend",
+                "type": "debugpy",
+                "request": "launch", 
+                "program": "${workspaceFolder}/PosterRend.py",
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}"
+            }
+        ]
+    }
+}

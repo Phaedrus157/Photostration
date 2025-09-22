@@ -1,0 +1,152 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🎨 Run ArchRend (Architectural Rendering)",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["ArchRend.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Generate professional watercolor-style architectural renderings"
+        },
+        {
+            "label": "🏗️ Run PhotStration (Technical Drawing)",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["PhotStration.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Generate architectural line drawings and technical illustrations"
+        },
+        {
+            "label": "🎭 Run PosterRend (Cartoon Style)",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["PosterRend.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Generate cartoon/comic book style illustrations"
+        },
+        {
+            "label": "✏️ Run BasicArchSketch (Minimalistic Lines)",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["BasicArchSketch.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Generate minimalistic architectural line drawings with strong structural lines"
+        },
+        {
+            "label": "📦 Install Requirements",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["-m", "pip", "install", "-r", "requirements.txt"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Install all required Python packages for PhotStration"
+        },
+        {
+            "label": "🧹 Format All Python Files",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["-m", "black", "*.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Format all Python files using Black formatter"
+        },
+        {
+            "label": "🔍 Run Type Checking",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["-m", "mypy", "*.py"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Run type checking on all Python files"
+        },
+        {
+            "label": "🚀 Run All Rendering Scripts",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "🎨 Run ArchRend (Architectural Rendering)",
+                "🏗️ Run PhotStration (Technical Drawing)", 
+                "🎭 Run PosterRend (Cartoon Style)",
+                "✏️ Run BasicArchSketch (Minimalistic Lines)"
+            ],
+            "group": "build",
+            "detail": "Run all four rendering scripts in sequence"
+        },
+        {
+            "label": "📁 Open Output Folder",
+            "type": "shell",
+            "command": "explorer",
+            "args": ["C:\\Users\\jaa15\\OneDrive\\Pictures\\APS images"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Open the output folder containing generated images"
+        },
+        {
+            "label": "🖼️ Test Image Utils",
+            "type": "shell",
+            "command": "C:/Users/jaa15/AppData/Local/Programs/Python/Python313/python.exe",
+            "args": ["-c", "from image_utils import get_qc_image_path; print('Found image:', get_qc_image_path())"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Test dynamic image detection system"
+        }
+    ]
+}
